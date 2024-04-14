@@ -5,7 +5,7 @@
     <link rel="icon" th:href="@{images/billy.png}">
     <link rel="stylesheet" th:href="@{stylesheets/style.css}">
     <title>SlaveList</title>
-    <script defer th:src="@{scripts/script.js}">f</script>
+    <script defer th:src="@{scripts/script.js}"></script>
 </head>
 <body>
     <div class="addUser">
@@ -17,6 +17,29 @@
 
     <div class="getUser">
         <h5></h5>
+        <div class="findByName">
+            <input type="checkbox" id="findByNameCB">
+            <label for="findByNameCB"> Поиск по имени </label>
+        </div>
+
+        <div class="findByAge">
+            <input type="checkbox" id="findByAgeCB">
+            <label for="findByAgeCB"> Поиск по возрасту </label>
+        </div>
+
+        <div class="sort">
+            <input type="checkbox" id="sortFieldCB">
+            <label for="sortFieldCB"> Сортировка </label>
+        </div>
+
+        <div class="limit">
+            <input type="number" id="limitN" placeholder="Кол-во выводимых значений">
+        </div>
+
+        <div class="offset">
+            <input type="number" id="offsetN" placeholder="Кол-во пропускаемых значений">
+        </div>
+
         <button id="getUsersBt" class="button"> Получить список пользователей </button>
         <h5></h5>
 
