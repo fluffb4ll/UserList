@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" th:href="@{images/billy.png}">
+    <link rel="stylesheet" th:href="@{stylesheets/style.css}">
+    <title>SlaveList</title>
+    <script defer th:src="@{scripts/script.js}">f</script>
+</head>
+<body>
+    <div class="addUser">
+        <h2> Добавить пользователя </h2>
+        <input type="text" id="userName" placeholder="Имя">
+        <input type="number" id="userAge" placeholder="Возраст">
+        <button id="addUserBt" class="button"> Отправить данные </button>
+    </div>
+
+    <div class="getUser">
+        <h5></h5>
+        <button id="getUsersBt" class="button"> Получить список пользователей </button>
+        <h5></h5>
+
+        <table id="userList">
+            <tr>
+                <td> Имя пользователя </td>
+                <td> Возраст </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="deleteUser">
+        <h5></h5>
+        <input type="text" id="deletionName" placeholder="Имя">
+        <button id="deleteUserBt" class="button"> Удалить пользователя </button>
+    </div>
+
+    <div class="editUser">
+        <h5></h5>
+        <input type="text" id="editName" placeholder="Имя">
+        <input type="number" id="editAge" placeholder="Возраст">
+        <button id="editUserBt" class="button"> Изменить возраст пользователя </button>
+    </div>
+
+</body>
+</html>
